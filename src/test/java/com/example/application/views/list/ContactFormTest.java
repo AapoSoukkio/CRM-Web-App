@@ -72,6 +72,7 @@ public class ContactFormTest {
         form.addSaveListener(e -> {
             savedContactRef.set(e.getContact());
         });
+        form.save.click();
 
         Contact savedContact = savedContactRef.get();
 
