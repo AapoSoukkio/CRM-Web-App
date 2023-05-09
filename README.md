@@ -30,7 +30,7 @@ Coming soon
 
 ## Features
 
-The application provides the following features:
+The application provides the following features
 
 
 ## How to run the project
