@@ -9,7 +9,7 @@ Made by: Aapo Soukkio
 
 The main purpose of this project was to gain hands-on experience with Java and web application
 development using Spring Boot and Vaadin. The goal was to become familiar with the techniques
-behind these frameworks and to build a functional web application. The project was built by 
+behind these frameworks and to build a functional web application. The project was built by
 following the Vaadin Course and implementing the concepts learned throughout the course.
 
 ## About the project
