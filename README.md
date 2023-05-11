@@ -21,16 +21,43 @@ a form for editing and adding contacts, a dashboard view, and cloud deployment c
 
 ## Technologies Used
 
-Coming soon
+- Java
+- Spring Boot
+- Vaadin
+- Maven
+- H2 Database
 
 ## About the data
 
-Coming soon
+The application accesses the data through the use of Spring Data JPA repositories.
 
+### Data Model
+
+The application uses a model consisting of three main entities:
+
+- Contact: Represents a contact in the CRM system. Each contact belongs to a
+  company and has a corresponding status.
+- Company: Represents a company in the CRM system. It can have multiple contacts 
+  associated with it.
+- Status: Represents the status of a contact in the CRM system.
+
+### Seed data
+
+To populate the database with initial sample data, the application utilizes the data.sql
+file located in the src/main/resources directory. This file contains SQL statements that
+are executed when the application starts up, providing the necessary seed data for demonstration purposes.
+
+### Data access
+
+Instead of directly accessing the database from the view, the application follows a service-oriented approach.
+The service class acts as the intermediary between the view and the database. 
+
+By following this architecture, the application separates the concerns of data access and presentation,
+promoting modularity and maintainability.
 
 ## Features
 
-The application provides the following features
+The application provides the following features:
 
 
 ## How to run the project
