@@ -7,8 +7,8 @@ Made by: Aapo Soukkio
 
 ## Purpose of this project
 
-The main purpose of this project was to gain hands-on experience with Java and web application
-development using Spring Boot and Vaadin. The goal was to become familiar with the techniques
+The main purpose of this project was to gain hands-on experience using Java in web application
+development with Spring Boot and Vaadin. The goal was to become familiar with the techniques
 behind these frameworks and to build a functional web application. The project was built by
 following the Vaadin Course and implementing the concepts learned throughout the course.
 
@@ -16,7 +16,7 @@ following the Vaadin Course and implementing the concepts learned throughout the
 
 The application is a Customer Relationship Management (CRM) system designed to manage contacts,
 and it includes features such as a log-in screen, a responsive layout that works on both desktop
-and mobile, a database for persistent data storage, a list view that can be sorted and filtered,
+and mobile, a database for in memory data storage, a list view that can be sorted and filtered,
 a form for editing and adding contacts, a dashboard view, and cloud deployment capabilities.
 
 ## Technologies Used
@@ -55,12 +55,10 @@ The service class acts as the intermediary between the view and the database.
 By following this architecture, the application separates the concerns of data access and presentation,
 promoting modularity and maintainability.
 
-## Features
-
-The application provides the following features:
-
 
 ## How to run the project
+
+You can download the IntelliJ IDEA (Community Edition or Ultimate) from [here](https://www.jetbrains.com/idea/download/#section=windows).
 
 1. Clone the project repository to your local machine.
 2. Open IntelliJ IDEA and click on "File" -> "New" -> "Project from Existing Sources"
@@ -71,20 +69,29 @@ The application provides the following features:
 7. Wait for the server to start up and the application to build.
 8. Once the application has started, navigate to http://localhost:8080 in your web browser to view the running application.
 
+
 Note: The first time you start the Vaadin application, it may take some time to download front-end dependencies and build
 a JavaScript bundle. Additionally, the development mode in Vaadin will automatically open a browser window for you.
 ## Tests
 
-Coming soon
+The testing approach includes unit tests for individual components and integration tests to verify the interaction
+between different parts of the application and to test more advanced UI logic.
 
 ### How to run the tests
 
-Coming soon
+You can run all tests by once in IntelliJ IDEA.
 
-## Other notes
+1. Navigate to the test folder which can be found under the src folder
+2. Right-click the package that contains both tests, and select Run tests in 'com.example.application.views.list'.
+3. You should see that both test classes run and result in three successful tests
 
-Coming soon
+## Notes
+
+In the application the Dashboard view uses Vaadin Charts which is a Commercial Component Set
+that’s part of the Vaadin Pro subscription. So you will not see the Dashboard view how it's supposed 
+to be shown in http://localhost:8080/dashboard unless you have Vaadin Pro subscription.
+All Vaadin Pro tools and components are free for students through the [GitHub Student Developer Pack](https://education.github.com/pack?utm_source=github+vaadin)
 
 ## Helpful Links
 
-Coming soon
+https://vaadin.com/docs/latest/guide/quick-start
